@@ -1,3 +1,5 @@
+#ifndef __1854_H__
+#define __1854_H__
 #include <vector>
 #include <stdio.h>
 #include <string.h>
@@ -38,11 +40,16 @@ public:
            { 1993, 1999 }, { 2000, 2010 }
        };
 
+       std::cout << "example_1: {1993. 1999}, {2000, 2010}" << std::endl;
        std::cout << "example_1 answer:" << maximumPopulation(example_1) << std::endl;
 
        std::vector<std::vector<int>> example_2 = {
            { 1950, 1961 }, { 1960, 1971 }, { 1970, 1981 }
        };
+       
+       std::cout << "example_1: { 1950, 1961 }, { 1960, 1971 }, { 1970, 1981 }" << std::endl;
        std::cout << "example_2 answer:" << maximumPopulation(example_2) << std::endl;
     }
 };
+
+#endif // __1854_H__

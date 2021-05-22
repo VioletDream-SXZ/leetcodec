@@ -1,3 +1,6 @@
+#ifndef __SOLUTION_FACTORY_H__
+#define __SOLUTION_FACTORY_H__
+
 #include <map>
 #include "Solution.h"
 
@@ -31,3 +34,5 @@ public:
 private:
     std::map<int, Solution*> mSolutions;
 };
+
+#endif // __SOLUTION_FACTORY_H__

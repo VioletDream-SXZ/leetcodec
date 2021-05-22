@@ -1,3 +1,5 @@
+#ifndef __SOLUTION_H__
+#define __SOLUTION_H__
 #include <stdio.h>
 
 class Solution {
@@ -8,3 +10,5 @@ public:
 
     virtual void run() = 0;
 };
+
+#endif // __SOLUTION_H__

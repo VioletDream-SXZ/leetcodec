@@ -1,3 +1,5 @@
+#ifndef _208_H__
+#define _208_H__
 #include <stdio.h>
 #include <string>
 #include <iostream>
@@ -29,15 +31,19 @@ public:
     }
 
     virtual void run() {
+        std::cout << "insert apple" << std::endl;
         insert("apple");
-        std::cout << search("apple") << std::endl;
-        std::cout << search("app")   << std::endl;
-        std::cout << startsWith("app") << std::endl;
-
+        std::cout << "search \"apple\" answer:" << search("apple") << std::endl;
+        std::cout << "search \"app\" answer:" << search("app")   << std::endl;
+        std::cout << "startsWith \"app\" answer:" << startsWith("app") << std::endl;
+        std::cout << "insert app" << std::endl;
         insert("app");
+        std::cout << "search \"app\" answer:" << search("app")   << std::endl;
         std::cout << search("app") << std::endl;
     }
 
 private:
     Trie* mTrie;
 };
+
+#endif // _208_H__

@@ -1,3 +1,5 @@
+#ifndef __TRIE_H__
+#define __TRIE_H__
 #include <stdio.h>
 #include <string>
 
@@ -30,3 +32,5 @@ private:
     Trie* mWord[30];
     bool  bEnd;
 };
+
+#endif // __TRIE_H__
