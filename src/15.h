@@ -15,27 +15,27 @@ public:
 
     ~Solution_15() = default;
 
-    vector<vector<int>> threeSum(vector<int>& nums) {
+    virtual vector<vector<int>> threeSum(vector<int>& nums) {
         std::vector<std::vector<int>> result;
         std::vector<int> result_uint;
         std::sort(nums.begin(), nums.end());
         int n = nums.size();
         for (int first_pos = 0; first_pos < n; ++first_pos) {
             if (first_pos > 0 && nums[first_pos] == nums[first_pos - 1]) 
-            	continue;
+                continue;
 
             int third_pos = n -1;
             int target = -nums[first_pos];
             for (int second_pos = first_pos + 1; second_pos < n; ++second_pos) {
-            	if (second_pos > first_pos + 1 && nums[second_pos] == nums[second_pos - 1]) 
-            		continue;
+                if (second_pos > first_pos + 1 && nums[second_pos] == nums[second_pos - 1]) 
+                    continue;
 
-            	while (third_pos > second_pos && nums[second_pos] + nums[third_pos] > target) third_pos--;
-            	if (second_pos == third_pos)
-            	    break;
+                while (third_pos > second_pos && nums[second_pos] + nums[third_pos] > target) third_pos--;
+                if (second_pos == third_pos)
+                    break;
 
                 if (nums[second_pos] + nums[third_pos] == target)
-                	result.push_back({nums[first_pos], nums[second_pos], nums[third_pos]});
+                    result.push_back({nums[first_pos], nums[second_pos], nums[third_pos]});
             }
         }
         return result;
