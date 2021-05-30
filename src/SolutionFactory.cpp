@@ -1,5 +1,6 @@
 #include "SolutionFactory.h"
 
+#include "15.h"
 #include "208.h"
 #include "1854.h"
 
@@ -12,7 +13,8 @@ SolutionFactory* SolutionFactory::getInstance() {
 }
 
 void SolutionFactory::initialize() {
-    MKF_ADD_LEETCODEC(208, new Solution_208());
+    MKF_ADD_LEETCODEC(15,   new Solution_15());
+    MKF_ADD_LEETCODEC(208,  new Solution_208());
     MKF_ADD_LEETCODEC(1854, new Solution_1854());
 }
 
