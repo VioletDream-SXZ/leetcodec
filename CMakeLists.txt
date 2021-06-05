@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 11)
 project(Leetcodec)
 
 add_executable(Leetcodec 
+               ./src/ListNode.cpp
+               ./src/VectorUtils.cc
                ./src/main.cpp
                ./src/SolutionFactory.cpp
                ./src/Trie.cpp)
