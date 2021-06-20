@@ -4,6 +4,7 @@
 #include "208.h"
 #include "817.h"
 #include "1441.h"
+#include "1600.h"
 #include "1854.h"
 
 SolutionFactory* SolutionFactory::getInstance() {
@@ -19,6 +20,7 @@ void SolutionFactory::initialize() {
     MKF_ADD_LEETCODEC(208,  new Solution_208());
     MKF_ADD_LEETCODEC(817,  new Solution_817());
     MKF_ADD_LEETCODEC(1441, new Solution_1441());
+    MKF_ADD_LEETCODEC(1600, new ThroneInheritance());
     MKF_ADD_LEETCODEC(1854, new Solution_1854());
 }
 
